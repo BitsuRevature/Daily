@@ -46,7 +46,7 @@
             <input type="radio" name="gender" value="female" tabindex="4">
         </div>
 
-        <div>
+        <div  style="border: 1px solid black; padding: 0 7.5rem 0 7.5rem;">
             <label for="hobby">
                 <div>
                     <input type="checkbox" name="hobby" id="hobby1" value="gaming" checked tabindex="5"> 
@@ -62,6 +62,15 @@
         <div>
             <label for="country">country</label>
             <select name="country" id="countryList"  tabindex="7">
+                <option value="UK" selected>UK</option>
+                <option value="india" selected>India</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="country">country</label>
+            <select name="country" id="countryList" multiple tabindex="7">
                 <option value="UK" selected>UK</option>
                 <option value="india" selected>India</option>
                 <option value="USA">USA</option>

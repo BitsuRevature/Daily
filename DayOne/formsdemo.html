@@ -1,0 +1,82 @@
+<!-- Form is used to get data from the user 
+    Most of the time we use the input element
+    <input> is polymorphic, based on the type attribute it changes
+        - password attribute simply masks the input. NO ENCRYPTION
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/pathToApiEndPoint" style="height: 95vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 1.5rem; gap: 0.5rem; text-transform: uppercase;">
+        <div style="padding: 0.2rem;">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Jhon Doe" tabindex="1" required minlength="5"
+                style="
+                height: 1.5rem;
+                margin-left: 1rem;
+                border: none;
+                border-bottom: 1px solid black;
+                text-align: right;
+                font-size: 1rem;
+                "
+            >
+        </div>
+        <div style="padding: 0.2rem;">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" tabindex="2"
+                style="
+                height: 1.5rem;
+                margin-left: 1rem;
+                border: none;
+                border-bottom: 1px solid black;
+                text-align: right;
+                font-size: 1rem;
+                "
+            >
+        </div>
+
+        <div>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="male" tabindex="3">
+            <label for="gender">female</label>
+            <input type="radio" name="gender" value="female" tabindex="4">
+        </div>
+
+        <div>
+            <label for="hobby">
+                <div>
+                    <input type="checkbox" name="hobby" id="hobby1" value="gaming" checked tabindex="5"> 
+                    <label>Gaming</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hobby" id="hobby2" value="eating" tabindex="6"> 
+                    <label>Eating</label>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <label for="country">country</label>
+            <select name="country" id="countryList"  tabindex="7">
+                <option value="UK" selected>UK</option>
+                <option value="india" selected>India</option>
+                <option value="USA">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="comment">Comments</label>
+            <textarea name="comment" id="comment" tabindex="8"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" tabindex="9" value="Submit">
+        </div>
+    </form>
+    
+</body>
+</html>

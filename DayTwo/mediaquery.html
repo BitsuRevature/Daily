@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root{
+        --bg-color: dodgerblue;
+        }
+
+        @media screen and (max-width: 600px){
+            *{
+                font-size: 2rem;
+            }
+        }
+
+        .flex{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            background-color: var(--bg-color);
+        }
+
+        .flex div{
+            height: 2rem;
+            width: 2rem;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+            background-color: var(--bg-color);
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .grid div{
+            height: 2rem;
+            width: 2rem;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quia tempora sunt soluta, minima ex nam earum atque distinctio, exercitationem, at laborum tempore quasi aperiam sequi vitae eligendi nostrum possimus.</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, illum quo voluptas error magnam consequatur voluptatibus esse sapiente assumenda reiciendis odit sed in harum eos possimus sequi libero excepturi velit?</div>
+    
+
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        
+    </div>
+
+    <hr>
+
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+</body>
+</html>

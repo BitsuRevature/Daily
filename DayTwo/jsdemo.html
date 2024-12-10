@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="header">Hello JavaScript</h1>
+    <hr>
+
+    <button id="btn">Click Me</button>
+    <input type="text" id="nameInput" placeholder="Name Please">
+    
+
+    <script>
+        const btn = document.getElementById("btn");
+        const nameInput = document.getElementById("nameInput");
+        const header = document.getElementById("header");
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            header.innerText=" Changed"
+            // alert("You Clicked Me!! " + nameInput.value);
+        })
+
+        btn.addEventListener("dblclick", (e) => {
+            e.preventDefault();
+            alert("You Double Clicked Me!! " + nameInput.value);
+        })
+    </script>
+</body>
+</html>

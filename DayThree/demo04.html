@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2 id="firsth1">Inserting Element</h2>
+
+    <button id="insert">Insert</button>
+
+
+    
+
+    <script>
+
+        const insertBtn = document.getElementById("insert");
+        const firsth1 = document.getElementById("firsth1");
+
+        insertBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const newDiv = document.createElement("div");
+            newDiv.innerHTML = "<p>Hello there...</p>";
+
+            firsth1.append(newDiv);
+        })
+
+    </script>
+</body>
+</html>

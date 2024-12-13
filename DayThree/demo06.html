@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form, div, p{
+            width: 100%;
+            border: 1px solid black;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!--
+     During nested elemtens events are propagated from inner most elememt to outer most elemnt
+     Known as bubling called event propagation
+     -->
+
+     <!-- Event Capturing when events are going from outermost elemtent to innnermost elemnt  -->
+
+     <!-- defualt capturing is false -->
+
+    <form onclick="alert('Form')">
+        The Form
+        <div onclick="alert('Div')">The Div
+            <p onclick="alert('P')"> The p</p>
+        </div>
+    </form>
+    
+</body>
+</html>
